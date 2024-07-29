@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo" id="logo">Cristian Chrétien</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">À propos</a></li>
+          <li><a href="#experience">Compétences Informatiques</a></li>
+          <li><a href="#projects">Projets</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Cristian Chrétien</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">À propos</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Compétences Informatiques</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projets</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/Cristianphotocirclelight.png" alt="Cristian Chrétien profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Bonjour, je suis</p>
+        <h1 class="title">Cristian Chrétien</h1>
+        <p class="section__text__p2">Développeur Web</p>
+        <div class="btn-container">
+          <button class="btn btn-color-2" onclick="window.open('./assets/CV-CRISTIAN-CHRETIEN.pdf')">
+            Télécharger mon CV
+          </button>
+        </div>
+        <div id="socials-container">
+          <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
+            onclick="location.href='https://linkedin.com/in/cristian-chretien-b963521b9/'" />
+        </div>
+      </div>
+    </section>
+    <div class="arrow-wrapper">
+      <img src="./assets/arrow.png" alt="Arrow icon" class="arrow-profile" onclick='goToWithArrow(document.getElementById("about"))'/>
+    </div> 
+    <section id="about">
+      <p class="section__text__p1">En Savoir Plus</p>
+      <h1 class="title">Sur Moi</h1>
+      <div class="text-container">
+        <h3>
+          Bonjour,<br />
+        </h3>
+        <p>
+          Je m'appelle Cristian, Développeur Python/Django.<br />
+          Après 4 ans d'expérience dans l'environnement Web dans différents domaines (B2B, transport, systèmes embarqués.)<br />
+          j'ai cultivé ma passion pour le code.<br />
+          La rigueur, la détermination et la coopération m'accompagnent dans la réalisation des projets.<br />
+        </p>
+      </div>
+      <div class="experience-details-container">
+        <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Expérience</h3>
+              <br /><p>3 ans <br />Développement Web</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Formation</h3>
+              <br /><p>Développeur Web et Web Mobile<br />ENI École Informatique| France | Bac + 2 |<br /><br />Responsable en ingénierie des logiciels<br /> CESI Le Mans| France | Bac + 3 |</p>
+            </div>
+        </div>
+      </div>
+    </section>
+    <div class="arrow-wrapper">
+      <img src="./assets/arrow.png" alt="Arrow icon" class="arrow-profile" onclick='goToWithArrow(document.getElementById("experience"))'/>
+    </div>
+    <section id="experience">
+      <h1 class="title">Compétences Informatiques</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Développement Backend</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Python</h3>
+                  <p>Avancé</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Django</h3>
+                  <p>Avancé</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>PostgreSQL</h3>
+                  <p>Intermédiaire</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>MySQL</h3>
+                  <p>Intermédiaire</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>SQL Server</h3>
+                  <p>Intermédiaire</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Node JS</h3>
+                  <p>Notions</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Express JS</h3>
+                  <p>Notions</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>PHP</h3>
+                  <p>Notions</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Développement Frontend</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Avancé</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Avancé</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Bootstrap</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>CMS WordPress</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>React JS</h3>
+                  <p>Notions</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="arrow-wrapper">
+      <img src="./assets/arrow.png" alt="Arrow icon" class="arrow-profile" onclick='goToWithArrow(document.getElementById("projects"))' />
+    </div>
+    <section id="projects">
+      <h1 class="title">Projets</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.jpg"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Page web</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="openLinkInNewTab('https://jecroquebio.com/')">Site Web</button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/project-3.jpg" alt="Project 3" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">API</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="openLinkInNewTab('https://github.com/criss1987/apirest2024_github')">Github</button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.jpg"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Web scraping</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="openLinkInNewTab('https://github.com/criss1987/djangoscraper')">Github</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="arrow-wrapper">
+      <img src="./assets/arrow.png"  id="style-for-contact-arrow" alt="Arrow icon" class="arrow-profile" onclick='goToWithArrow(document.getElementById("contact"))' />
+    </div>
+    <section id="contact">
+      <h1 class="title">Contactez-moi</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:cristianchretien@gmail.com">cristianchretien@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://linkedin.com/in/cristian-chretien-b963521b9/">LinkedIn</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img 
+            src="./assets/smartphone.jpg" 
+            alt="Smartphone icon" 
+            class="icon contact-icon" 
+          />
+          <p><a>0668293489</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#logo" onclick="goToLogo()">Profil</a></li>
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#experience">Compétences Informatiques</a></li>
+            <li><a href="#projects">Projets</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Cristian Chrétien. Tous droits réservés.</p>
+    </footer>
+
+
+
+
+  </body>
+</html>
